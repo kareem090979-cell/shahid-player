@@ -204,15 +204,16 @@ display: block;
 <header>
 <h3>Star Cinema</h3>
 
-<!-- أزرار التحكم العلوية (تحديث وخروج بدون أخطاء) -->
+<!-- أزرار التحكم العلوية -->
 <div class="header-btns">
     <button class="top-btn" onclick="location.reload();">
         <i class="fa fa-refresh"></i> تحديث
     </button>
     
-    <button class="top-btn" onclick="try { window.close(); } catch(e) {}">
+    <!-- زر الخروج الموجه لأمر الإغلاق الداخلي للتطبيق -->
+    <a href="go:exit" class="top-btn">
         <i class="fa fa-power-off"></i> خروج
-    </button>
+    </a>
 </div>
 </header>
 
