@@ -209,8 +209,6 @@ display: block;
     <button class="top-btn" onclick="location.reload();">
         <i class="fa fa-refresh"></i> تحديث
     </button>
-    
-   
 </div>
 </header>
 
@@ -240,10 +238,6 @@ display: block;
 <CENTER><p>افلام اجنبيه</p></CENTER>
 </a>
 
-
-
-    
-
 </div>
 
 <script>
@@ -254,6 +248,11 @@ document.getElementById("mySidenav").style.width = "250px";
 function closeNav() {
 document.getElementById("mySidenav").style.width = "0";
 }
+
+// كود التحديث التلقائي كل 15 ثانية (15000 ميلي ثانية)
+setTimeout(function(){
+    location.reload();
+}, 15000);
 </script>
 </body>
 </html>
