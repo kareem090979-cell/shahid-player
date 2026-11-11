@@ -45,13 +45,11 @@ justify-content: space-between;
 box-sizing: border-box;
 }
 
-/* حاوية الأزرار في الأعلى (تحديث وخروج) */
 .header-btns {
 display: flex;
 gap: 5px;
 }
 
-/* تنسيق الأزرار العلوية */
 .top-btn {
 background: rgba(255, 255, 255, 0.2);
 border: none;
@@ -206,15 +204,15 @@ display: block;
 <header>
 <h3>Star Cinema</h3>
 
-<!-- أزرار التحكم العلوية (تحديث وإغلاق التطبيق) -->
+<!-- أزرار التحكم العلوية (تحديث وخروج بدون أخطاء) -->
 <div class="header-btns">
     <button class="top-btn" onclick="location.reload();">
         <i class="fa fa-refresh"></i> تحديث
     </button>
     
-    <a href="go:exit" class="top-btn" onclick="try { window.close(); } catch(e) {}">
+    <button class="top-btn" onclick="try { window.close(); } catch(e) {}">
         <i class="fa fa-power-off"></i> خروج
-    </a>
+    </button>
 </div>
 </header>
 
